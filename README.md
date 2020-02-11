@@ -3,6 +3,8 @@ Open Source Mining Sheet For Eve Online
 
 > Goal: Develop an open source tracking sheet for fleet ops.
 
+>  [Example](https://docs.google.com/spreadsheets/d/1saIzsQe26twQZy-U0qnRo6SS7B9M1QJx0Xe3r3mN5sY/edit?usp=sharing)
+
 
 
 ## Immediate Goals:
