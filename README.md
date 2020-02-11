@@ -10,6 +10,20 @@ Open Source Mining Sheet For Eve Online
 
 1. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
 2. After Pulling this repo run `npm install` in the root directory to pull dependencies.
+3. Running Test Server.js
+
+```BASH
+node server.js // http://localhost:3000/
+```
+
+## For Live Reload:
+
+```bash
+npm install nodemon --save-dev
+./node_modules/.bin/nodemon server.js
+```
+
+
 
 ## Immediate Goals:
 
