@@ -21,21 +21,21 @@ Open Source Mining Sheet For Eve Online
 
 ## Decisions:
 
-Database:
+### Database:
 
 * [Mongo](https://www.w3schools.com/nodejs/nodejs_mongodb.asp)
 * [SQL](https://www.w3schools.com/nodejs/nodejs_mysql.asp)
 
 
 
-Templating / UI
+### Templating / UI
 
 * Pending...
 * https://www.codeinwp.com/blog/angular-vs-vue-vs-react/
 
 
 
-Style: [SCSS](https://sass-lang.com/)
+### Style: [SCSS](https://sass-lang.com/)
 
 
 
