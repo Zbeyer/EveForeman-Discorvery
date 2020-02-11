@@ -31,6 +31,7 @@ Database:
 Templating / UI
 
 * Pending...
+* https://www.codeinwp.com/blog/angular-vs-vue-vs-react/
 
 
 
