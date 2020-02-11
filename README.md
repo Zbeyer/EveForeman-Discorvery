@@ -43,10 +43,12 @@ Tools for character / corp
 classDiagram
 
     class Market {
+    
 		+ <Array> OreFams
     }
 
     class OreFam {
+    
         + <int> value
         + <String> ID D0
         + <String> ID D1
@@ -54,6 +56,7 @@ classDiagram
     }
 
     class Ore {
+    
         + <String> ID
         + <String> Name
         + <int> Density //0, 1, 2
@@ -70,32 +73,40 @@ classDiagram
 classDiagram
 
     class Operation {
+    
         - <Market>	market
         - <Fleet>	fleet
         - <Pilot> 	foreman
         - <Haul> 	currentHaul
+        
         - fetchMarket()
         - formFleet()
     }
 
 	class Fleet {
+	
 		- <Array: Pilot> 	pilots
+		
         - addPilot()
         - removePilot()
 	}
 
     class Pilot {
+    
     	+ <String> Name
     	+ <Date> startTime
     	+ <Date> stopTime
     	+ <Interval> AFKTime
+    	
     	- startMining()
     	- stopMining()
     	- payout()
     }
 
     class Haul {
+    
         + <Array: Ore> oresMined
+        
         - getValue()
         - adjustValue()
     }
