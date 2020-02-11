@@ -1,0 +1,28 @@
+{
+  "name": "eveforeman",
+  "version": "1.0.0",
+  "description": "utilities for managing eve online industrial fleets",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zbeyer/EveForeman.git"
+  },
+  "keywords": [
+    "Eve",
+    "Online",
+    "Mining",
+    "Fleet"
+  ],
+  "author": "zbeyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zbeyer/EveForeman/issues"
+  },
+  "homepage": "https://github.com/Zbeyer/EveForeman#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

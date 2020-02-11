@@ -1,11 +1,14 @@
 # EveForeman
+
 Open Source Mining Sheet For Eve Online
 
 > Goal: Develop an open source tracking sheet for fleet ops.
 
 >  [Example](https://docs.google.com/spreadsheets/d/1saIzsQe26twQZy-U0qnRo6SS7B9M1QJx0Xe3r3mN5sY/edit?usp=sharing)
 
+## Setup
 
+1. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
 
 ## Immediate Goals:
 
@@ -16,6 +19,8 @@ Open Source Mining Sheet For Eve Online
 3. Track Ore Pulled
 4. Determine value of haul and compute payouts
 5. Allow foreman (user) ability to override any values as needed or desired
+
+
 
 
 
