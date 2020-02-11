@@ -19,6 +19,27 @@ Open Source Mining Sheet For Eve Online
 
 
 
+## Decisions:
+
+Database:
+
+* [Mongo](https://www.w3schools.com/nodejs/nodejs_mongodb.asp)
+* [SQL](https://www.w3schools.com/nodejs/nodejs_mysql.asp)
+
+
+
+Templating / UI
+
+* Pending...
+
+
+
+Style: [SCSS](https://sass-lang.com/)
+
+
+
+
+
 ## Long Term Goal: Solution for Price Auto Population
 
 1. Pull from https://evepraisal.com/
