@@ -22,6 +22,7 @@ Open Source Mining Sheet For Eve Online
 ## Long Term Goal: Solution for Price Auto Population
 
 1. Pull from https://evepraisal.com/
+	1. https://npm.taobao.org/package/evepraisal
 2. Pull from https://eve-marketdata.com/
 
 
@@ -30,3 +31,25 @@ Open Source Mining Sheet For Eve Online
 
 Tools for character / corp 
 
+
+
+```mermaid
+classDiagram
+
+class Market {
+	+ <Array> OreFams
+}
+
+class OreFam {
+	+ <int> value
+	+ <String> ID D0
+	+ <String> ID D1
+	+ <String> ID D2
+}
+
+class Ore {
+	+ <String> ID
+	+ <String> Name
+	+ <int> Density //0, 1, 2
+}
+```
