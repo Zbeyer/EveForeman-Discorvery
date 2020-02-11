@@ -33,17 +33,17 @@ Tools for character / corp
 
 
 
-----
+## Outlining Architecture
+
+* [Pretty Diagrams](https://support.typora.io/Draw-Diagrams-With-Markdown/
 
 
-
-[Pretty Diagrams](https://support.typora.io/Draw-Diagrams-With-Markdown/
 
 ```mermaid
 classDiagram
 
     class Market {
-        + <Array> OreFams
+		+ <Array> OreFams
     }
 
     class OreFam {
