@@ -1,5 +1,13 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const bodyParser= require('body-parser')
+const app = express()
+const MongoClient = require('mongodb').MongoClient
+
+MongoClient.connect('link-to-mongodb', (err, database) => {
+  // ... start the server
+})
+
+app.use(bodyParser.urlencoded({extended: true}))
 
 app.listen(3000, function() {
 	console.log('listening on 3000')
@@ -11,6 +19,8 @@ app.get('/', (req, res) => {
 	// Mine was '/Users/zellwk/Projects/demo-repos/crud-express-mongo' for this app.
 })
 
-app.post('/quotes', (req, res) => {
-	console.log('%o', req)
-})
+app.post('/pilot', (req, res) => {
+	console.log(req.body)
+  })
+
+

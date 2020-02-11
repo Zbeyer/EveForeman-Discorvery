@@ -1,4 +1,4 @@
-# EveForeman
+# EveForeman README.md
 
 Open Source Mining Sheet For Eve Online
 
@@ -9,21 +9,28 @@ Open Source Mining Sheet For Eve Online
 ## Setup
 
 1. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
-2. After Pulling this repo run `npm install` in the root directory to pull dependencies.
+2. After Pulling this repo run `npm install` in the root directory to pull dependencies:
+
+```
+npm install
+```
+
 3. Running Test Server.js
 
 ```BASH
 node server.js // http://localhost:3000/
 ```
+3b.  For live reload while devleoping, use `nodemon` instead
 
-## For Live Reload:
-
-```bash
-npm install nodemon --save-dev
+```BASH
 ./node_modules/.bin/nodemon server.js
 ```
 
 
+
+----
+
+# EveForeman: Working Document
 
 ## Immediate Goals:
 
@@ -36,17 +43,12 @@ npm install nodemon --save-dev
 5. Allow foreman (user) ability to override any values as needed or desired
 
 
-
-
-
 ## Decisions:
 
 ### Database:
 
 * [Mongo](https://www.w3schools.com/nodejs/nodejs_mongodb.asp)
-* [SQL](https://www.w3schools.com/nodejs/nodejs_mysql.asp)
-
-
+* [Setup Local Mongo DB](https://zellwk.com/blog/local-mongodb/)
 
 ### Templating / UI
 
@@ -56,9 +58,6 @@ npm install nodemon --save-dev
 
 
 ### Style: [SCSS](https://sass-lang.com/)
-
-
-
 
 
 ## Long Term Goal: Solution for Price Auto Population
@@ -77,7 +76,7 @@ Tools for character / corp
 
 ## Outlining Architecture
 
-* [Pretty Diagrams](https://support.typora.io/Draw-Diagrams-With-Markdown/
+* [Pretty Diagrams](https://support.typora.io/Draw-Diagrams-With-Markdown/)
 
 
 
