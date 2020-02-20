@@ -6,27 +6,37 @@ Open Source Mining Sheet For Eve Online
 
 >  [Example](https://docs.google.com/spreadsheets/d/1saIzsQe26twQZy-U0qnRo6SS7B9M1QJx0Xe3r3mN5sY/edit?usp=sharing)
 
-## Setup
+## Pramble
 
 1. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
-2. After Pulling this repo run `npm install` in the root directory to pull dependencies:
 
-```
-npm install
-```
+Overview
+---
 
-3. Running Test Server.js
+The project is separated out into two distinct components:
 
-```BASH
-node server.js // http://localhost:3000/
-```
-3b.  For live reload while devleoping, use `nodemon` instead
+*   Client
+*   Server 
 
-```BASH
-./node_modules/.bin/nodemon server.js
-```
+Each need to be setup before running against your host machine
 
+Client Setup
+---
 
+1.  using your command line step into the `./client` folder
+2.  run `npm install`
+3.  ` npm run dev`
+
+>    By default the client can be accessed http://localhost:8080
+
+Server Setup
+---
+
+1.  using your command line, step into the `./sterver` folder
+2.  run `npm install`
+3.  run `npm start`
+
+>    By default the server can be checked by hitting http://localhost:8081/status
 
 ----
 

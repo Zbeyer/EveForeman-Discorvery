@@ -24,4 +24,17 @@ app.get('/status', (req, res) => {
     })
 })
 
+app.post('/register', (req, res) => {
+    console.log('REQUEST: %o', req.body)
+    res.send({
+        message: `Register... ${req.body.email}`
+    })
+})
+
+app.post('/login', (req, res) => {
+    res.send({
+        message: `${req.body.email} Attempted to login but the end point has not been written`
+    })
+})
+
 app.listen(process.env.PORT || 8081)
