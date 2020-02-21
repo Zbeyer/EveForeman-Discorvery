@@ -1,3 +1,5 @@
+
+const AuthController = require('./controllers/AuthController')
 module.exports = (app) => {
 
     // CRUD Methods in Express...
@@ -16,17 +18,8 @@ module.exports = (app) => {
         })
     })
 
-    app.post('/register', (req, res) => {
-        console.log('REQUEST: %o', req.body)
-        res.send({
-            message: `Register... ${req.body.email}`
-        })
-    })
+    app.post('/register', AuthController.register)
 
-    app.post('/login', (req, res) => {
-        res.send({
-            message: `${req.body.email} Attempted to login but the end point has not been written`
-        })
-    })
+    app.post('/login', AuthController.login)
 
 }
