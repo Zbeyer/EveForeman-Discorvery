@@ -1,5 +1,8 @@
 
 const AuthController = require('./controllers/AuthController')
+
+const AuthControllerPolicy = require('./policies/AuthControllerPolicy')
+
 module.exports = (app) => {
 
     // CRUD Methods in Express...
@@ -18,8 +21,8 @@ module.exports = (app) => {
         })
     })
 
-    app.post('/register', AuthController.register)
+    app.post('/register', AuthControllerPolicy.register, AuthController.register)
 
-    app.post('/login', AuthController.login)
+    app.post('/login', AuthControllerPolicy.login, AuthController.login)
 
 }
