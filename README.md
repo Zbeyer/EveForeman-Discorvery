@@ -38,6 +38,17 @@ Server Setup
 
 >    By default the server can be checked by hitting http://localhost:8081/status
 
+
+
+SQL Notes
+---------
+
+> pending...
+
+* https://sequelize.org/
+
+
+
 ----
 
 # EveForeman: Working Document
@@ -51,19 +62,6 @@ Server Setup
 3. Track Ore Pulled
 4. Determine value of haul and compute payouts
 5. Allow foreman (user) ability to override any values as needed or desired
-
-
-## Decisions:
-
-### Database:
-
-* [Mongo](https://www.w3schools.com/nodejs/nodejs_mongodb.asp)
-* [Setup Local Mongo DB](https://zellwk.com/blog/local-mongodb/)
-
-### Templating / UI
-
-* Pending...
-* https://www.codeinwp.com/blog/angular-vs-vue-vs-react/
 
 
 
