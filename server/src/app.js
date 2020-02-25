@@ -12,8 +12,9 @@ app.use(cors()) // Allow multi-clients to talk to server
 
 require('./routes')(app) // All Route Requests...
 
-sequelize.sync()
-    .then( () => {
-        app.listen(config.port)
-        console.log(`Server started on port ${config.port}`)
-    })
+// DEBUG: FORCE CLEAR ENTIRE DATABASE: sequelize.sync({force:  true})
+sequelize.sync({force: false})
+  .then(() => {
+    app.listen(config.port)
+    console.log(`Server started on port ${config.port}`)
+  })
