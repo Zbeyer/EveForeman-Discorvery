@@ -3,26 +3,30 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import store from './store'
 import Vuetify from 'vuetify'
-// index.js or main.js
-import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
-// Helpers
-import colors from 'vuetify/es5/util/colors'
+// import 'vuetify/src/stylus/app.styl'
+// import 'vuetify/src/styles/main.sass'
+// import '@mdi/font/css/materialdesignicons.min.css'
+// import { sync } from 'vuex-router-sync'
+import 'vuetify/dist/vuetify.min.css'
+// import store from '@/store/store'
+import VueYouTubeEmbed from 'vue-youtube-embed'
+// import Panel from '@/components/globals/Panel'
 
 Vue.config.productionTip = false
+Vue.config.devtools = true
 
-Vue.use(Vuetify, {
-  theme: {
-    primary: colors.red.darken1, // #E53935
-    secondary: colors.red.lighten4, // #FFCDD2
-    accent: colors.indigo.base // #3F51B5
-  }
-})
+Vue.use(Vuetify)
+Vue.use(VueYouTubeEmbed)
+const vuetifyOptions = {}
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  // store,
+  template: '<App/>',
   components: { App },
-  template: '<App/>'
+  vuetify: new Vuetify(vuetifyOptions)
 })

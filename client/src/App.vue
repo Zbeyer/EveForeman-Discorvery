@@ -1,41 +1,46 @@
 <template>
-
-  <div id="app">
-      <v-navigation-drawer clipped fixed v-model="drawer" app>
-        <v-list dense>
-        </v-list>
-      </v-navigation-drawer>
-      <v-toolbar app fixed clipped-left>
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        <v-toolbar-title>Application</v-toolbar-title>
-      </v-toolbar>
-      <v-content>
-        <v-container fluid fill-height>
-          <v-layout justify-center align-center>
-            <router-view />
-          </v-layout>
-        </v-container>
-      </v-content>
-      <v-footer app fixed>
-        <span>&copy; 2020</span>
-      </v-footer>
-  </div>
+    <div id="app">
+        <v-app>
+            <!-- <v-navigation-drawer app></v-navigation-drawer> -->
+            <!-- <v-toolbar app></v-toolbar> -->
+            <nav-bar />
+            <!-- <v-content> -->
+            <!-- <v-container fluid> -->
+            <router-view></router-view>
+            <!-- </v-container> -->
+            <!-- </v-content> -->
+            <!-- <v-footer app></v-footer> -->
+            <app-footer />
+        </v-app>
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import NavBar from '@/components/Navigation/NavBar'
+    import AppFooter from '@/components/Footer/AppFooter'
+
+    export default {
+        name: 'app',
+        components: {
+            'nav-bar': NavBar,
+            'app-footer': AppFooter
+        }
+    }
+
 </script>
 
 <style>
-@import '~vuetify/src/stylus/main'
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
+
+    .danger-alert {
+        color: red;
+    }
+
 </style>
