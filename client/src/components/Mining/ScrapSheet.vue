@@ -1,33 +1,38 @@
 <template>
-    <v-layout>
-        <div>
-            <foil color="cyan" pic="https://vuejsexamples.com/favicon.png" />
-            <foil color="red" pic="https://vuejsexamples.com/favicon.png" />
-            <foil color="amber" pic="https://vuejsexamples.com/favicon.png" />
-            <foil color="teal" pic="https://vuejsexamples.com/favicon.png" />
-            <foil color="blue" pic="https://vuejsexamples.com/favicon.png" />
-            <!-- <foil color="red" pic="@/assets/athena.png" /> -->
-        </div>
-        <v-flex xs12 sm6 offset-sm3>
-            <v-card>
-                <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" aspect-ratio="2.75"></v-img>
-                <v-card-title primary-title>
-                    <div>
-                        <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-                        <div> {{ card_text }} </div>
-                    </div>
-                </v-card-title>
-                <v-card-actions>
-                    <v-btn flat color="orange">Share</v-btn>
-                    <v-btn flat color="orange">Explore</v-btn>
-                </v-card-actions>
-            </v-card>
-        </v-flex>
-    </v-layout>
+  <div>
+    <content-card pic="https://vuejsexamples.com/favicon.png"
+    type="leadership"
+    title="Leadership"
+    subtitle="Section for the foreman"
+    footnote="I love managing ops!"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+
+    <content-card pic="https://vuejsexamples.com/favicon.png"
+    type="industry"
+    title="Industry"
+    subtitle="Section for mining ships"
+    footnote="I love mining ores!"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+
+    <content-card pic="https://vuejsexamples.com/favicon.png"
+    type="security"
+    title="Security"
+    subtitle="Section for combat ships"
+    footnote="I love pew pew"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+
+    <content-card pic="https://vuejsexamples.com/favicon.png"
+    type="bacon"
+    title="Bacon"
+    subtitle="Section for who knows what"
+    footnote="I am uncertain of my existance!"
+    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+
+  </div>
 </template>
 
 <script>
-    import Foil from '@/components/Generics/Images/FoilImage.vue'
+import ContentCard from '@/components/Generics/ContentCard'
     export default {
         name: 'ScrapSheet',
         data () {
@@ -36,11 +41,12 @@
             }
         },
         components: {
-            'foil': Foil
+            'content-card': ContentCard
         }
 
     }
 </script>
 
 <style>
+
 </style>
