@@ -22,7 +22,7 @@ Getting Started
 
 ------
 
-> While this project is an Open Source service and application intended to be licensed under [The MIT License](https://opensource.org/licenses/MIT), any forked code and deployment artifacts may be subject to [CCP's Developer License](https://developers.eveonline.com/resource/license-agreement). 
+> While this project is an open source service and application intended to be licensed under [The MIT License](https://opensource.org/licenses/MIT), any forked code and deployment artifacts may be subject to [CCP's Developer License](https://developers.eveonline.com/resource/license-agreement). 
 > Be sure that your use of this repository and its contents remains in keeping with both agreements to cover your own butt. 
 
 ----
