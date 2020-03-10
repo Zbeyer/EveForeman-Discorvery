@@ -7,7 +7,7 @@
                 <span class="content-subtitle">{{subtitle}}</span>
                 <span class="content-footnote">{{footnote}}</span>
                 <hr>
-                <span class="content-body">{{body}}</span>
+                <span class="content-body" v-html="body"/>
             </div>
         </v-flex>
     </v-layout>
