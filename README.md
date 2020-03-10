@@ -61,23 +61,23 @@ SQL Notes
 Development Strategy
 ====================
 
-![figure a](assets/figure a.jpg)
+![figure a](./assets/figure a.jpg)
 
-![figure d](assets/figure d.jpg)
+![figure d](./assets/figure d.jpg)
 
 > Details Pending...
 
 Branching Strategy
 ==================
 
-![figure b](assets/figure b.jpg)
+![figure b](./assets/figure b.jpg)
 
 > Details Pending...
 
 Deployment Strategy
 ===================
 
-![figure c](assets/figure c.jpg)
+![figure c](./assets/figure c.jpg)
 
 > Details Pending...
 
