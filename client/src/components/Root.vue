@@ -15,7 +15,7 @@ import ContentCard from '@/components/Generics/ContentCard'
 export default {
   name: 'Root',
   components: {
-    'content-card': ContentCard,
+    'content-card': ContentCard
   },
   data () {
     return {
