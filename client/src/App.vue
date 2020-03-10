@@ -3,7 +3,7 @@
         <v-app>
             <!-- <v-navigation-drawer app></v-navigation-drawer> -->
             <!-- <v-toolbar app></v-toolbar> -->
-            <nav-bar />
+            <app-header />
             <!-- <v-content> -->
             <!-- <v-container fluid> -->
             <router-view></router-view>
@@ -16,13 +16,13 @@
 </template>
 
 <script>
-    import NavBar from '@/components/Navigation/NavBar'
+    import AppHeader from '@/components/Header/AppHeader'
     import AppFooter from '@/components/Footer/AppFooter'
 
     export default {
         name: 'app',
         components: {
-            'nav-bar': NavBar,
+            'app-header': AppHeader,
             'app-footer': AppFooter
         }
     }
