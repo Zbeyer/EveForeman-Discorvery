@@ -21,8 +21,6 @@
     footnote="Covering our collective butts"
     body="This project and any any forks may be subject to <a href='https://developers.eveonline.com/resource/license-agreement'>CCP Developer License</a>. Use of static content and SSO login are intended (but not yet implemented)."/>
 
-
-
     </div>
 
 </template>
