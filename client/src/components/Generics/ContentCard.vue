@@ -39,6 +39,9 @@
                 case 'industry':
                     color = 'amber'
                     break
+                case 'gallente':
+                    color = 'teal'
+                    break
                 default:
                     color = 'brown'
                     break
@@ -66,6 +69,10 @@
 
     .bacon .content-subtitle {
         color: rgba(255, 152, 0, 1);
+    }
+    
+    .gallente .content-subtitle {
+        color: rgba(0, 150, 136, 1)
     }
 
 </style>

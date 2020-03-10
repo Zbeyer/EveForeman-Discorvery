@@ -72,22 +72,24 @@
         float: top;
         color: white;
         font-weight: 100;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        text-transform: capitalize;
+        font-size:      2.50rem;
+        line-height:    2.75rem;
     }
 
     .content-subtitle {
         font-weight: bold;
-        font-size: 1.75rem;
         text-transform: uppercase;
-        line-height: 1.5rem;
+        font-size:      1.75rem;
+        line-height:    2.0rem;
     }
 
     .content-footnote {
         color: white;
-        font-size: 1.25rem;
-        line-height: 1.25rem;
-        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+        font-size:      1.25rem;
+        line-height:    1.50rem;
+        margin-bottom:  0.5rem;
     }
 
     .content-body {
