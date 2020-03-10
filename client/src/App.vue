@@ -73,19 +73,20 @@
         color: white;
         font-weight: 100;
         font-size: 2.5rem;
+        line-height: 2.25rem;
     }
 
     .content-subtitle {
         font-weight: bold;
         font-size: 1.75rem;
         text-transform: uppercase;
-        margin-top: -1.25rem;
+        line-height: 1.45rem;
     }
 
     .content-footnote {
         color: white;
         font-size: 1.25rem;
-        margin-top: -0.75rem;
+        line-height: 1.25rem;
     }
 
     .content-body {
