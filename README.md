@@ -18,6 +18,15 @@ Getting Started
 
 ## Pramble
 
+###### Legal Acknowledgement
+
+------
+
+> While this project is an Open Source service and application intended to be licensed under [The MIT License](https://opensource.org/licenses/MIT), any forked code and deployment artifacts may be subject to [CCP's Developer License](https://developers.eveonline.com/resource/license-agreement). 
+> Be sure that your use of this repository and its contents remains in keeping with both agreements to cover your own butt. 
+
+----
+
 1. Build scripts have not yet been configured for Windows developers.
 	1. *If you are already proficient in node development on a Windows and can add support please open a PR* 
 2. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
