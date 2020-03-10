@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>Footer Goes here</p>
     </div>
 </template>
 

@@ -4,6 +4,7 @@
             <!-- <v-navigation-drawer app></v-navigation-drawer> -->
             <!-- <v-toolbar app></v-toolbar> -->
             <app-header />
+            <nav-bar />
             <!-- <v-content> -->
             <!-- <v-container fluid> -->
             <router-view></router-view>
@@ -18,11 +19,13 @@
 <script>
     import AppHeader from '@/components/Header/AppHeader'
     import AppFooter from '@/components/Footer/AppFooter'
+    import NavBar from '@/components/Navigation/NavBar'
 
     export default {
         name: 'app',
         components: {
             'app-header': AppHeader,
+            'nav-bar': NavBar,
             'app-footer': AppFooter
         }
     }

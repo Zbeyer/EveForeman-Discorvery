@@ -1,5 +1,6 @@
 <template>
     <div>
+        <p>Navigation Goes Here</p>
     </div>
 </template>
 
