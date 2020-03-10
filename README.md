@@ -1,4 +1,9 @@
-# EveForeman README.md
+###### EveForeman README.md
+
+
+
+Overview
+========
 
 Open Source Mining Sheet For Eve Online
 
@@ -6,9 +11,17 @@ Open Source Mining Sheet For Eve Online
 
 >  [Example](https://docs.google.com/spreadsheets/d/1saIzsQe26twQZy-U0qnRo6SS7B9M1QJx0Xe3r3mN5sY/edit?usp=sharing)
 
+
+
+Getting Started
+===============
+
 ## Pramble
 
-1. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
+1. Build scripts have not yet been configured for Windows developers.
+	1. *If you are already proficient in node development on a Windows and can add support please open a PR* 
+2. You need to have [Node](https://nodejs.org/) installed on whatever device is serving this web-app
+3. Recommend tools: [VSCode](https://code.visualstudio.com/)
 
 Overview
 ---
@@ -38,14 +51,37 @@ Server Setup
 
 >    By default the server can be checked by hitting http://localhost:8081/status
 
-
-
 SQL Notes
 ---------
 
 > pending...
 
 * https://sequelize.org/
+
+Development Strategy
+====================
+
+![figure a](assets/figure a.jpg)
+
+![figure d](assets/figure d.jpg)
+
+> Details Pending...
+
+Branching Strategy
+==================
+
+![figure b](assets/figure b.jpg)
+
+> Details Pending...
+
+Deployment Strategy
+===================
+
+![figure c](assets/figure c.jpg)
+
+> Details Pending...
+
+1. 
 
 
 
@@ -79,8 +115,6 @@ SQL Notes
 ## Long Term Goal: Solution for Quality of Life
 
 Tools for character / corp 
-
-
 
 ## Outlining Architecture
 
