@@ -1,43 +1,98 @@
 <template>
-  <div>
-    <content-card pic="https://vuejsexamples.com/favicon.png"
-    type="leadership"
-    title="Leadership"
-    subtitle="Section for the foreman"
-    footnote="I love managing ops!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+    <div>
 
-    <content-card pic="https://vuejsexamples.com/favicon.png"
-    type="industry"
-    title="Industry"
-    subtitle="Section for mining ships"
-    footnote="I love mining ores!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+        <content-card pic="https://vuejsexamples.com/favicon.png" type="security" title="W.I.P." subtitle="Scrap Sheet"
+            footnote="Work in progress"
+            body="This page is a work in progress. While it may be visually interesting nothing yet is functional so please don't be too disappointed by aparent lack of functionality." />
 
-    <content-card pic="https://vuejsexamples.com/favicon.png"
-    type="security"
-    title="Security"
-    subtitle="Section for combat ships"
-    footnote="I love pew pew"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+        <v-card light align="center">
+            <v-sparkline :value="value" :gradient="gradient" :smooth="radius || false" :padding="padding"
+                :line-width="width" :stroke-linecap="lineCap" :gradient-direction="gradientDirection" :fill="fill"
+                :type="type" :auto-line-width="autoLineWidth" auto-draw />
+            <v-form v-model="valid">
+                <div class="text-center">
+                    <span v-for="n in numbers">
+                        <v-progress-circular :value="n" class="ma-1" color="teal" />
+                    </span>
+                </div>
+                <v-calendar dark />
+                <v-container>
+                    <v-row>
+                        <v-col cols="12" md="4">
+                            <v-text-field v-model="oppName" :rules="nameRules" :counter="80" label="Operation"
+                                required />
+                        </v-col>
+                    </v-row>
+                    <v-row justify="center">
+                        <v-col cols="12" md="4">
+                            <v-date-picker v-model="datePicker" class="ma-4" scrollable show-current color="teal" dark
+                                landscape />
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <span class="content-subtitle">{{datePicker}}</span>
+                        </v-col>
+                    </v-row>
 
-    <content-card pic="https://vuejsexamples.com/favicon.png"
-    type="bacon"
-    title="Bacon"
-    subtitle="Section for who knows what"
-    footnote="I am uncertain of my existance!"
-    body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nunc risus, maximus et pharetra ut, ornare ut sapien. Ut auctor ipsum nibh, vitae varius quam ornare vulputate. Etiam tincidunt augue vitae justo rutrum, nec rhoncus nisi porta. Suspendisse accumsan, magna id volutpat scelerisque, sapien lacus dapibus erat, in cursus mi ante quis justo. Donec lacinia ultrices sem vel vulputate. Curabitur fringilla ultricies diam, vitae iaculis nunc elementum id. Donec vel sollicitudin tellus, a dictum libero. Phasellus consequat, sem id imperdiet consequat, felis diam dignissim nibh, quis maximus neque massa quis dolor. Duis eu ligula eu quam convallis suscipit."/>
+                    <v-row justify="center">
+                        <v-col cols="12" md="4">
+                            <v-time-picker v-model="timePicker" format="24hr" scrollable color="teal" dark landscape />
+                        </v-col>
+                        <v-col cols="12" md="4">
+                            <span class="content-subtitle">{{timePicker}}</span>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" md="4">
+                            <v-select v-model="select" :items="items" :error-messages="selectErrors" label="Item"
+                                required @change="$v.select.$touch()" @blur="$v.select.$touch()"></v-select>
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col cols="12" md="4">
 
-  </div>
+                            <v-btn class="mr-4" @click="submit">submit</v-btn>
+                            <v-btn @click="clear">clear</v-btn>
+                        </v-col>
+                    </v-row>
+                </v-container>
+            </v-form>
+            <v-row justify="space-around">
+                <v-switch v-model="row" class="mx-2" label="Row"></v-switch>
+                <v-switch v-model="valid" class="ma-4" label="Valid" readonly></v-switch>
+                <v-switch v-model="lazy" class="ma-4" label="Lazy"></v-switch>
+            </v-row>
+        </v-card>
+    </div>
 </template>
 
 <script>
-import ContentCard from '@/components/Generics/ContentCard'
+    import ContentCard from '@/components/Generics/ContentCard'
+    const gradients = [
+        ['#222'],
+        ['#42b3f4'],
+        ['red', 'orange', 'yellow'],
+        ['purple', 'violet'],
+        ['#00c6ff', '#F0F', '#FF0'],
+        ['#f72047', '#ffd200', '#1feaea']
+    ]
     export default {
         name: 'ScrapSheet',
         data () {
             return {
-                card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.'
+                numbers: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+                datePicker: '',
+                timePicker: '',
+                width: 2,
+                radius: 10,
+                padding: 8,
+                lineCap: 'round',
+                gradient: gradients[5],
+                value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
+                gradientDirection: 'top',
+                gradients,
+                fill: false,
+                type: 'trend',
+                autoLineWidth: false
             }
         },
         components: {
@@ -45,6 +100,7 @@ import ContentCard from '@/components/Generics/ContentCard'
         }
 
     }
+
 </script>
 
 <style>
