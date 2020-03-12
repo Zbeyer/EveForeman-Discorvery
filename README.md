@@ -1,7 +1,5 @@
 ###### EveForeman README.md
 
-
-
 Overview
 ========
 
@@ -12,6 +10,8 @@ Open Source Mining Sheet For Eve Online
 >  [Example](https://docs.google.com/spreadsheets/d/1saIzsQe26twQZy-U0qnRo6SS7B9M1QJx0Xe3r3mN5sY/edit?usp=sharing)
 
 
+
+*[`eveforeman.com` Live Test Client](http://eveforeman.com/) still missing key features*
 
 Getting Started
 ===============
