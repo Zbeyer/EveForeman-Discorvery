@@ -4,10 +4,16 @@
             {{ helloWorld }}
         </div>
 
-        <v-card light align="center" style="padding 2em;">
+        <v-card dark align="center">
             <v-form v-model="valid">
                 <v-container>
                     <v-layout>
+                        <v-text-field v-model="pilotName" :rules="nameRules" :counter="40" label="Pilot Name" required>
+                        </v-text-field>
+
+                        <v-text-field v-model="ship" :rules="nameRules" :counter="40" label="Ship" required>
+                        </v-text-field>
+
                         <v-text-field v-model="amount" :rules="numbers" :counter="10" label="Amount (m3)" required>
                         </v-text-field>
 
